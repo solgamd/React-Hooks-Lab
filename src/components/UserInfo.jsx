@@ -1,36 +1,32 @@
 import React, { useState, useEffect } from 'react';
 
-const UserInfo = (props) => {
+const UserInfo = props => {
 
-    const [userInfo, setUserInfo] = useState([]);
+    const [userInfo, setUserInfo] = useState({});
 
-    // const getUserInfo = async () => {
-    //     let res = await fetch(`https://jsonplaceholder.typicode.com/${props.match.params.id}`);
-    //     let data = await res.json();
-    //     setUserInfo(data);
-    // }
+    const getUserInfo = async () => {
+        let res = await fetch(`https://jsonplaceholder.typicode.com/${props.match.params.id}`);
+        let data = await res.json();
+        setUserInfo(data);
+    }
 
-    // const getUserInfo = () => {
-    //     fetch(`https://jsonplaceholder.typicode.com/${props.match.params.id}`)
-    //     .then(res => res.json())
-    //     .then(data => setUserInfo(data))
-    // }
-
+    
     useEffect(() => {
-        const getUserInfo = async () => {
-            let res = await fetch("https://jsonplaceholder.typicode.com/users" + props.match.params.id);
-            let data = await res.json();
-            setUserInfo(data);
-        };
+        // const getUserInfo = () => {
+        //     fetch(`https://jsonplaceholder.typicode.com/${props.match.params.id}`)
+        //     .then(res => res.json())
+        //     .then(data => setUserInfo(data))
+        // }
+    
         getUserInfo();
 
-    }, [props.match.params.id]);
+    }, []);
 
     
     return (
         <section className="container">
             <div className="row justify-content-center m-3">
-                <h3>{userInfo.name}</h3>
+                <h3 className="m-4">User Information</h3>
             </div>
             <div className="col mb-4">
                 <div className="card h-100">

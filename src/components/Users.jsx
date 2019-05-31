@@ -20,14 +20,14 @@ const Users = () => {
             <div className="container">
                 <section className="row justify-content-center">
                     <div className="col-12 d-flex justify-content-center">
-                        <h1>Users</h1>
+                        <h3 className="m-4">Users</h3>
                     </div>
                     <div className="col-12">
                         <ul className="list-group">
                             {users.map(user => (
                                 <li key={user.id} className="list-group-item d-flex justify-content-between">
                                 {user.name}
-                                <Link className="btn btn-secondary" to={`/users/${user.id}/info`} >More Info</Link>
+                                <Link className="btn btn-secondary" to={`/users/:id/info`} >More Info</Link>
                                 </li>
                             ))}
                         </ul>
