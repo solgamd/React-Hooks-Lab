@@ -19,5 +19,6 @@ Building a Webapp
 - Design Constraint: Only utilize useState and useEffect hooks, and code your webapp without using any class based components!!!
 - Use https://jsonplaceholder.typicode.com/ as a default REST API, or find your own for this lab if you're adventurous. ;)
 - Build a webapp using react-router-dom to have two routes
--- '/' the home route which will show a component with a preview list of all the objects in the endpoint of your choosing
--- '/:id/details' the details route which will show a component specialized in showing all the information for that object's id
+
+- '/' the home route which will show a component with a preview list of all the objects in the endpoint of your choosing
+- '/:id/details' the details route which will show a component specialized in showing all the information for that object's id
