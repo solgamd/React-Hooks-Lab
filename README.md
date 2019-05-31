@@ -1,68 +1,23 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Hook It Up!**
 
-## Available Scripts
+The purpose of this lab is to accommodate you with the React Hooks API available in versions 16.8 and higher, to continue practice interacting and displaying information from an API, and to show off how up-to-date you are with React!
 
-In the project directory, you can run:
+*Steps*
 
-### `npm start`
+Setup
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- Create a new project with create-react-app
+- Delete the src and public directories
+- Create a new public directory with an index.html inside
+- Make a basic html document using the ! emmet command
+- Make sure it has one div with any id value you want (root is commonly used)
+- Create a new src directory with an index.js inside
+- Code the entry point for your entire <App /> in this file (just like what is initially generated)
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+Building a Webapp
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+- Design Constraint: Only utilize useState and useEffect hooks, and code your webapp without using any class based components!!!
+- Use https://jsonplaceholder.typicode.com/ as a default REST API, or find your own for this lab if you're adventurous. ;)
+- Build a webapp using react-router-dom to have two routes
+-- '/' the home route which will show a component with a preview list of all the objects in the endpoint of your choosing
+-- '/:id/details' the details route which will show a component specialized in showing all the information for that object's id
