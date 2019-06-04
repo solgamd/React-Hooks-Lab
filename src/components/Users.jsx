@@ -27,7 +27,7 @@ const Users = () => {
                             {users.map(user => (
                                 <li key={user.id} className="list-group-item d-flex justify-content-between">
                                 {user.name}
-                                <Link className="btn btn-secondary" to={`/users/:id/info`} >More Info</Link>
+                                <Link className="btn btn-secondary" to={`/users/${user.id}/info`} >More Info</Link>
                                 </li>
                             ))}
                         </ul>
